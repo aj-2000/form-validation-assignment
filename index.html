@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rablo.IN Form Assignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Form Validation - Assignment 2</div>
+      <form action="#" id="from-validation">
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details">Name</span>
+            <input type="text" placeholder="E.g: Ajay Sharma" required />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="hi@ajaysharma.dev" required />
+          </div>
+          <div class="input__box">
+            <span class="details">Phone Number</span>
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="706-567-2980"
+              required
+            />
+          </div>
+
+          <div class="input__box">
+            <span class="details">Message</span>
+            <textarea rows="5" cols="18" placeholder="(Optional)"></textarea>
+          </div>
+        </div>
+        <div class="gender__details">
+          <span class="gender__title">Gender</span>
+          <div class="category">
+            <label>
+              <input type="radio" name="gender" value="male" required />
+              Male </label
+            ><br />
+
+            <label>
+              <input type="radio" name="gender" value="female" />
+              Female </label
+            ><br />
+
+            <label>
+              <input type="radio" name="gender" value="other" />
+              Other </label
+            ><br />
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Validate Form" />
+        </div>
+      </form>
+      <p>Click on "Validate Form" Button to check if form is valid or Not.</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
